@@ -1,0 +1,41 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: box-change;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+@keyframes box-change {
+    0% {
+        background-color: red;
+        transform: translate(0 0);
+    }
+
+    25% {
+        background-color: green;
+        left: 500px;
+        top: 400px;
+    }
+
+    50% {
+        background-color: darkcyan;
+        left: 900px;
+        top: 400px;
+    }
+
+    75% {
+        background-color: darkviolet;
+        top: 100px;
+        left: 900px;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
